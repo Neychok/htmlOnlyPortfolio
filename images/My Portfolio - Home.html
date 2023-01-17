@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="My Portfolio">
+		<meta name="author" content="Eva Dimova">
+
+		<!-- OG tags -->
+		<meta property="og:title" content="My Portfolio">
+		<meta property="og:description" content="This is the homepage of my portfolio">
+		<meta property="og:image" content="https://myportfolio.com/images/logo.webp">
+		<meta property="og:url" content="https://myportfolio.com">
+		<meta property="og:site_name" content="My Portfolio">
+		<meta property="og:type" content="website">
+
+		<!-- Twitter tags -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@myportfolio">
+		<meta name="twitter:creator" content="@evadimova">
+		<meta name="twitter:title" content="My Portfolio">
+		<meta name="twitter:description" content="This is the homepage of my portfolio">
+		<meta name="twitter:image" content="https://myportfolio.com/images/logo.webp">
+
+		<title>My Portfolio - Home</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:5500/images/favicon.ico">
+	</head>
+	<body>
+		<header>
+			<a href="http://127.0.0.1:5500/">
+				<img width="50" height="50" src="./My Portfolio - Home_files/logo.webp" alt="logo">
+			</a>
+			<h1>My Portfolio</h1>
+		</header>
+		<nav>
+			<a href="http://127.0.0.1:5500/">Home</a> | 
+			<a href="http://127.0.0.1:5500/rankings.html">Rankings</a> | 
+			<a href="http://127.0.0.1:5500/about.html">about</a>
+		</nav>
+		<hr>
+		<main>
+			<h2>TOP News this week</h2>
+			<br>
+			<br>
+			<article>
+				<hr>
+				<img src="./My Portfolio - Home_files/news1.jpg" alt="news 1">
+				<h3>Morbi eu ipsum at ligula imperdiet viverra</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Morbi eu ipsum at ligula imperdiet viverra. <br>
+					Donec malesuada maximus risus eu laoreet. In condimentum
+					fringilla massa, aliquet dictum orci facilisis at. <br>
+					Mauris non ante ornare, condimentum mi sit amet, fermentum
+					eros. Aenean ut magna id urna tristique aliquam id et leo.
+					<br>
+					Vivamus bibendum porttitor tortor. Nullam eget purus
+					placerat, luctus eros at, iaculis elit.
+				</p>
+			</article>
+			<article>
+				<hr>
+				<img src="./My Portfolio - Home_files/news2.jpg" alt="news 2">
+				<h3>Lorem ipsum dolor sit amet</h3>
+				<p>
+					<i>Lorem ipsum dolor sit amet, consectetur adipiscing
+						elit. Morbi eu ipsum at ligula imperdiet viverra.</i>
+					<br>
+					<strong>Donec malesuada maximus risus eu laoreet. In
+						condimentum fringilla massa, aliquet dictum orci
+						facilisis at.</strong>
+					<br>
+					<em>Mauris non ante ornare, condimentum mi sit amet,
+						fermentum eros. Aenean ut magna id urna tristique
+						aliquam id et leo.</em>
+					<br>
+					<mark>Vivamus bibendum porttitor tortor. Nullam eget purus
+						placerat, luctus eros at, iaculis elit.</mark>
+					<br>
+				</p>
+			</article>
+			<article>
+				<hr>
+				<img src="./My Portfolio - Home_files/news3.jpg" alt="news 3">
+				<h3>Velit velit blandit mauris</h3>
+				<p>
+					<sub>Vivamus vel ex porttitor, auctor diam sed, tempor
+						nisl.</sub>
+					<sup>Proin porta leo nibh.</sup>
+					<br>
+					<del>Integer mi eros, congue id convallis vel, condimentum
+						nec dui. Vestibulum vitae tortor a orci sollicitudin
+						finibus.</del>
+					<br>
+					<strong>Mauris nec vestibulum dui, et iaculis odio.</strong>
+					<br>
+					<em>Sed dignissim, metus in malesuada facilisis, velit
+						velit blandit mauris, eget varius erat libero sed
+						est.</em>
+					<br>
+					<ins>Donec lobortis diam tincidunt, blandit nunc non, dictum
+						est. Mauris ac consectetur nunc, ac fringilla ante.
+						Suspendisse potenti.</ins>
+					<br>
+					Sed hendrerit nisl ac viverra viverra. Suspendisse bibendum
+					augue eget dapibus rutrum. Aliquam eu maximus nisl.
+				</p>
+			</article>
+		</main>
+		<footer>
+			<hr>
+			<br>
+			<div>
+				<span>Made by
+					<strong>Eva Dimova F099897</strong>
+				</span>
+			</div>
+			<br>
+		</footer>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
