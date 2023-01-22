@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="My Portfolio" />
-		<meta name="author" content="Eva Dimova" />
-
-		<!-- OG tags -->
-		<meta property="og:title" content="My Portfolio" />
-		<meta property="og:description" content="This is the homepage of my portfolio" />
-		<meta
-			property="og:image"
-			content="https://myportfolio.com/images/logo.webp"
-		/>
-		<meta property="og:url" content="https://myportfolio.com" />
-		<meta property="og:site_name" content="My Portfolio" />
-		<meta property="og:type" content="website" />
-
-		<!-- Twitter tags -->
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:site" content="@myportfolio" />
-		<meta name="twitter:creator" content="@evadimova" />
-		<meta name="twitter:title" content="My Portfolio" />
-		<meta name="twitter:description" content="This is the homepage of my portfolio" />
-		<meta
-			name="twitter:image"
-			content="https://myportfolio.com/images/logo.webp"
-		/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="My Portfolio">
+		<meta name="author" content="Eva Dimova">
 
 		<title>My Portfolio - Contact</title>
 
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 	</head>
 	<body>
 		<header>
 			<a href="/">
-				<img width="50" src="images/logo.webp" alt="logo" />
+				<img width="50" src="/images/logo.webp" alt="logo">
 			</a>
 			<h2>My Portfolio</h2>
 		</header>
 		<nav>
-			<a href="/">Home</a>&emsp;|&emsp;
-			<a href="about.html">About Me</a>&emsp;|&emsp;
-			<a href="contact.html">Contact</a>
+			<a href="/index.html">Home</a>&emsp;|&emsp;
+			<a href="/about.html">About Me</a>&emsp;|&emsp;
+			<a href="/contact.html">Contact</a>
 		</nav>
-		<hr />
+		<hr>
 		<main>
+
 			<div>
-				<h3>Contact us</h3>
+				<address>
+					Written by <a href="mailto:evadimova@gmail.com">Eva Dimova</a>.<br>
+					Visit us at:<br>
+					Sofia<br>
+					Montevideo 21<br>
+					BG
+				</address>
+			</div>
+			<div>
+				<h3>Contact me</h3>
 				<form
-					action="https://www.memecreator.org/static/images/memes/5217108.jpg"
-					method="get"
+					action="/submit.html"
+					method="GET"
 				>
 					<label for="name">Name:</label>
-					<input id="name" placeholder="name" />
-					<br />
-					<br />
+					<input id="name" placeholder="John Doe" name="name" type="text" required> *
+					<br>
+					<br>
+
 					<label for="email">Email:</label>
-					<input id="email" placeholder="email" />
-					<br />
-					<br />
-					<span>Gender:</span>
-					<br />
-					<input type="radio" id="male" name="gender" value="male" />
-					<label for="male">Male</label>
-					<br />
-					<input
-						type="radio"
-						id="female"
-						name="gender"
-						value="female"
-					/>
-					<label for="female">Female</label>
-					<br />
-					<br />
-					<label for="category">Category:</label>
+					<input id="email" placeholder="johndoe@gmail.com" name="email" type="email" required> *
+					<br>
+					<br>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" pattern="^(\+359|0)[0-9]{9}$" required> *
+					<br>
+					<small>Format: +359891234567</small>
+					<br>
+					<br>
+
+					<label for="category">Type of inquiry:</label>
 					<select id="category" name="category">
-						<option value="category1">category 1</option>
-						<option value="category2">category 2</option>
-						<option value="category3">category 3</option>
+						<optgroup label="Option Group 1">
+							<option selected value="category1">category 1</option>
+							<option value="category2">category 2</option>
+							<option value="category3">category 3</option>
+						</optgroup> 
+						<optgroup label="Option Group 2">
+							<option value="category4">category 4</option>
+							<option value="category5">category 5</option>
+						</optgroup> 
 					</select>
-					<br />
-					<br />
-					<input id="TAC" type="checkbox" />
-					<label for="TAC">I accept the Terms and Conditions</label>
-					<br />
-					<br />
-					<input type="submit" value="Submit" />
+					<br>
+					<br>
+
+					<label for="message">Message:</label>
+					<br>
+					<textarea id="message" name="message" rows="5" cols="33" placeholder="Your message here..."></textarea>
+					<br>
+					<br>
+					
+					<input id="TAC" name="tac" type="checkbox">
+					<label for="TAC">I accept the Terms and Conditions *</label>
+					<br>
+					<br>
+
+					<input id="promo" name="promo" type="checkbox" checked>
+					<label for="promo">I want to receive promotional emails</label>
+					<br>
+					<br>
+
+					<input type="submit" value="Submit">
 				</form>
 			</div>
 		</main>
-		<br />
+		<br>
 		<footer>
-			<hr />
-			<p>© 2023 - All Rights Reserved</p>
+			<hr>
+			<p>© 2023 - Eva Dimova F099897</p>
 		</footer>
 	</body>
 </html>
